@@ -7,11 +7,10 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
-
+import { RecetasPage} from "../pages/recetas/recetas";
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { ingresoPage }  from '../pages/ingreso/ingreso';
-import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 
@@ -22,7 +21,8 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
     ContactPage,
     HomePage,
     TabsPage,
-    ingresoPage
+    ingresoPage,
+    RecetasPage
   ],
   imports: [
     BrowserModule,
@@ -36,7 +36,8 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
     ContactPage,
     HomePage,
     TabsPage,
-    ingresoPage
+    ingresoPage,
+    RecetasPage
   ],
   providers: [
     StatusBar,
