@@ -1,10 +1,6 @@
 import {Component} from "@angular/core";
 import {NavController, AlertController, ToastController, MenuController} from "ionic-angular";
 import {TabsPage} from "../tabs/tabs";
-
-
-
-
 @Component({
   selector: 'page-ingreso',
   templateUrl: 'ingreso.html'

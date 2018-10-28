@@ -1,87 +1,15 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="secondary">
     <ion-title>Desayunos</ion-title>
   </ion-navbar>
 </ion-header>
-
 <ion-content class="cards-bg">
-
-  <ion-card>
-
-    <img src="http://www.workgym.com.uy/wp-content/uploads/2015/10/Desayuno-nutritivo.png"/>
-
-    <ion-card-content>
-      <ion-card-title>
-        Lunes
-      </ion-card-title>
-     <p>
-       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, cumque! Recusandae esse reiciendis laborum quos modi aliquam, exercitationem quasi? Aliquam accusantium beatae debitis sint repellendus voluptatibus magni atque incidunt? Dolorum!
-      </p>
-    </ion-card-content>
-
-    <ion-row no-padding>
-      
-    </ion-row>
-
-  </ion-card>
-
-  <ion-card>
-
-      <img src="http://www.workgym.com.uy/wp-content/uploads/2015/10/Desayuno-nutritivo.png"/>
-  
-      <ion-card-content>
-        <ion-card-title>
-          Martes
-        </ion-card-title>
-       <p>
-         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, cumque! Recusandae esse reiciendis laborum quos modi aliquam, exercitationem quasi? Aliquam accusantium beatae debitis sint repellendus voluptatibus magni atque incidunt? Dolorum!
-        </p>
-      </ion-card-content>
-  
-      <ion-row no-padding>
-        
-      </ion-row>
-  
-    </ion-card>
-
-    <ion-card>
-
-        <img src="http://www.workgym.com.uy/wp-content/uploads/2015/10/Desayuno-nutritivo.png"/>
-    
-        <ion-card-content>
-          <ion-card-title>
-            Juevez
-          </ion-card-title>
-         <p>
-           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, cumque! Recusandae esse reiciendis laborum quos modi aliquam, exercitationem quasi? Aliquam accusantium beatae debitis sint repellendus voluptatibus magni atque incidunt? Dolorum!
-          </p>
-        </ion-card-content>
-    
-        <ion-row no-padding>
-          
-        </ion-row>
-    
-      </ion-card>
-
-      <ion-card>
-
-          <img src="http://www.workgym.com.uy/wp-content/uploads/2015/10/Desayuno-nutritivo.png"/>
-      
-          <ion-card-content>
-            <ion-card-title>
-              Viernes
-            </ion-card-title>
-           <p>
-             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, cumque! Recusandae esse reiciendis laborum quos modi aliquam, exercitationem quasi? Aliquam accusantium beatae debitis sint repellendus voluptatibus magni atque incidunt? Dolorum!
-            </p>
-          </ion-card-content>
-      
-          <ion-row no-padding>
-            
-          </ion-row>
-      
-        </ion-card>
-
-
-
+  <ion-list>
+    <ion-item-sliding *ngFor="let desayuno1 of desayunos">
+      <ion-item>
+        <h2>Place : {{ desayuno1.dia }}</h2>
+        <h3>Ubication : {{ desayuno1.dia}}</h3>
+      </ion-item>
+    </ion-item-sliding>
+  </ion-list>
 </ion-content>
