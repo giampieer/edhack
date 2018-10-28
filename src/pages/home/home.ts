@@ -9,8 +9,6 @@ import * as firebase from "firebase";
 })
 export class HomePage {
   desayunos : any = [];
-  desayuno : any = {};
-  messages  = [];
   constructor(public navCtrl: NavController, private alertCtrl: AlertController) {
     this.getMessages();
   }
@@ -20,8 +18,8 @@ export class HomePage {
     var messageRef=firebase.database().ref().child("/0/ALIMENTOS");
     messageRef.on("value",(snap) => {
       var data =snap.val();
-      this.messages = data;
-      console.log(data);
+      this.desayunos = data;
+      console.log(this.desayunos);
 
     })
   }
